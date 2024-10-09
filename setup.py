@@ -2,21 +2,21 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='ca_pdp_analysis',
-    version='0.1',
-    description='Context-Aware Partial Dependence Plot (CA-PDP) Analysis Package',
+    name='ca_pdp_analysis',  # Your package name
+    version='0.1.0',         # Initial release version
+    author='Salih Tutun',
+    author_email='salihtutun@wustl.edu',
+    description='Partial Dependence Plot (PDP) Analysis Tool for Machine Learning Models',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    author='Your Name',
-    author_email='your.email@example.com',
-    url='https://github.com/your-repo/ca_pdp_analysis',
+    url='https://github.com/salihtutun/ca_pdp_analysis',
     packages=find_packages(),
     install_requires=[
-        'numpy',
         'pandas',
         'scikit-learn',
         'matplotlib',
-        'scipy'
+        'xgboost',
+        'seaborn',
     ],
     classifiers=[
         'Programming Language :: Python :: 3',
